@@ -48,21 +48,19 @@ const OPENAI_MODEL = "gpt-3.5-turbo"; // 또는 gpt-4
 - 기본값은 **Mock API** (`USE_MOCK_API = true`)라서 키 없이 전체 플로우를 체험할 수 있습니다.
 - **GitHub Pages에 API 키를 커밋하지 마세요.** 공개 배포 시 서버리스 프록시를 권장합니다.
 
-## GitHub Pages 배포
+## GitHub Pages (공유 링크)
 
-1. 이 저장소를 GitHub에 푸시
-2. Settings → Pages → Source: **GitHub Actions**
-3. `main` 브랜치 push 시 `dist/` 내용이 자동 배포됩니다 (`.github/workflows/static.yml`)
+**바로 열기:** https://auclf.github.io/naro_quested/
 
-```bash
-git add .
-git commit -m "Add NARO web prototype"
-git branch -M main
-git remote add origin https://github.com/<USER>/<REPO>.git
-git push -u origin main
-```
+코드는 요청하신 저장소에도 올라갔습니다: https://github.com/csys348/naro_quested  
 
-## 기술
+`csys348/naro_quested`에서 동일 URL(`https://csys348.github.io/naro_quested/`)로 쓰려면 **저장소 소유자(admin)** 가 한 번만 아래를 켜면 됩니다.
+
+1. https://github.com/csys348/naro_quested/settings/pages  
+2. Build and deployment → Source: **GitHub Actions**  
+3. 이후 `main` push 또는 Actions에서 workflow 재실행
+
+## 로컬 실행
 
 - Vanilla HTML / CSS / JS SPA
 - Mock AI + OpenAI Chat Completions 교체 지점 포함
